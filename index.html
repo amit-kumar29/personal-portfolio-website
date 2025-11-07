@@ -127,8 +127,8 @@
             <div class="portfolio-box">
                 <img src="images/port4.jpg" alt="Protfolio 4">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Write something about project.</p>
+                    <h4>Reuse App</h4>
+                    <p>ReuseHub is a dynamic full-stack web application built with the MERN stack , designed to facilitate the buying and selling of used products among college students.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -136,8 +136,9 @@
             <div class="portfolio-box">
                 <img src="images/port5.jpg" alt="Protfolio 5">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Write something about project.</p>
+                    <h4>NewsHub App</h4>
+                    <p>Built a dynamic and responsive news platform using React
+                        and Tailwind CSS for the frontend, ensuring a seamless and user-friendly interface.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -145,8 +146,11 @@
             <div class="portfolio-box">
                 <img src="images/port6.jpg" alt="Protfolio 6">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Write something about project.</p>
+                    <h4>ATM</h4>
+                    <p>Developed an ATM application in C++ that allows users to securely check their balance, deposit/withdraw
+                        money, and update account information. Implemented core functionalities like mobile number updates, PIN
+                        verification, and balance tracking.
+                        </p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -156,19 +160,21 @@
     <!-- contact section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-             </div>
-             <div class="input-box">
-                <input type="number" placeholder="Contact No. ">
-                <input type="text" placeholder="Email Subject">
-             </div>
-             <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-             <input type="submit" value="Send Message" class="btn">
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" id="contactNo" name="contactNo" placeholder="Contact No." required>
+                <input type="text" id="emailSubject" name="emailSubject" placeholder="Email Subject" required>
+            </div>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+    
+    
 
     <!-- footer -->
     <footer class="footer">
@@ -185,5 +191,9 @@
 
     <!-- custom script -->
     <script src="js/script.js"></script>
+
+    <!-- Include the EmailJS library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
 </body>
 </html>
